@@ -191,74 +191,156 @@ Dashboard
 
 ---
 
+# Part III: Business Findings and Conclusion
+
+## Dashboard
+
+The dashboard summarizes the main findings of this project, including customer segmentation, cohort retention, product analysis, hypothesis testing, and overall business KPIs.
+
+> Dashboard Preview
+
+---
+
 # Business Insights
 
-## Priority Insight
+## Customer Prioritization
 
-...
+Customer retention should not be treated equally across all customer groups.
 
-## Cohort Insight
+- Cannot Lose and At Risk customers contribute the highest potential revenue loss and should be prioritized.
+- Low Engagement customers account for almost half of all customers, suggesting many users leave before becoming loyal customers.
+- Different customer groups require different retention strategies.
 
-...
+---
 
-## Product Insight
+## Early Customer Drop-off
 
-...
+More than 90% of customers become inactive after their first month across almost every cohort.
 
-## Statistical Insight
+This indicates that the biggest retention challenge happens immediately after the first purchase rather than later in the customer lifecycle.
 
-...
+---
+
+## Churn Drivers
+
+Purchase amount shows a statistically significant difference between customer groups.
+
+However, no significant difference was found for
+
+- Discount amount
+- Shipping fee
+- Waiting time
+- Session duration
+
+The current dataset is therefore not sufficient to fully explain why customers churn. Other factors such as product quality, customer satisfaction, and competitor offerings should be investigated.
+
+---
+
+## Product Investigation
+
+Several products were identified as churn-associated products.
+
+These products should not be considered as the direct cause of churn, but as candidates for further investigation.
+
+One notable finding is that At Risk customers purchase Clothes & Apparel significantly more often than other customer groups. This category may deserve additional quality or customer feedback reviews.
+
+Retention-friendly products were also identified and may be considered for higher marketing exposure.
+
+---
+
+## Revenue Performance
+
+Monthly revenue and order volume fluctuate over time but remain relatively stable overall.
+
+Revenue peaks and order peaks occur during the same periods, suggesting that sales performance is mainly driven by order volume.
 
 ---
 
 # Business Recommendations
 
-## Customer Retention Strategy
+## Customer Strategy
 
-...
+Focus retention resources on customer groups with the highest business impact.
+
+- Cannot Lose → Immediate retention campaign
+- At Risk → Personalized retention offers
+- VIP → Loyalty and premium benefits
+- Low Engagement → Re-engagement campaign
+- Lost Customer → Win-back campaign (when economically feasible)
+
+---
+
+## Early-stage Retention
+
+Most customers leave after their first month.
+
+Retention efforts should therefore focus on the first 30 days after acquisition.
+
+Possible initiatives include
+
+- Loyalty point programs
+- Daily check-in rewards
+- Gamification
+- First-month exclusive offers
+- Personalized recommendations
+
+The objective is to encourage repeat purchases and build customer habits during the period with the highest drop-off.
+
+---
 
 ## Product Strategy
 
-...
+Use churn-associated products as an early warning list.
+
+Further investigation should include
+
+- Product quality
+- Return rate
+- Customer reviews
+- Customer complaints
+
+Retention-friendly products may also be considered for increased exposure in future campaigns.
+
+---
 
 ## Marketing Strategy
 
-...
+The analysis suggests that discount campaigns alone are unlikely to solve customer churn.
+
+Future retention strategies should combine pricing with product quality improvements and better customer experience.
+
+---
 
 ## Future Data Collection
 
-...
+To better understand customer churn, future datasets should include
+
+- Customer satisfaction
+- Product ratings
+- Customer support interactions
+- Return records
+- Customer complaints
+- Competitor information
 
 ---
 
-# Dashboard
+# Limitations
 
-(รูป Dashboard)
+This project identifies statistical relationships rather than causal relationships.
 
----
-
-# Project Structure
-
-```text
-Customer-Retention-Analysis/
-
-│
-
-├── Data/
-
-├── Notebook/
-
-├── Dashboard/
-
-├── Images/
-
-├── README.md
-
-└── requirements.txt
-```
+Some recommendations require additional operational data before business decisions can be made.
 
 ---
 
+# Future Work
+
+Possible extensions of this project include
+
+- Customer Lifetime Value (CLV)
+- Churn prediction model
+- Survival analysis
+- A/B testing for retention campaigns
+- Personalized recommendation system
 # Tools & Technologies
 
 - Python
@@ -270,15 +352,3 @@ Customer-Retention-Analysis/
 - Power BI
 - Git
 - GitHub
-
----
-
-# Limitations
-
-...
-
----
-
-# Future Work
-
-...
